@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const comments = document.getElementById('comments');
     img.comments.forEach((comment) => {
-      comments.innerHTML += `<li>${comment.content}</li>`;
+      comments.innerHTML += `<li>${comment.content} <button class="delete" data-id="${comment.id}">x</button></li>`;
     })
   } //function showImage
 
